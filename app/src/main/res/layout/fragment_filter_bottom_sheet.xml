@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Handle -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey_400" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Gempa"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 1. FILTER MAGNITUDO -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Magnitudo"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tv_magnitude_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0 - 9.0"
+                android:textSize="13sp"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/range_slider_magnitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="0.0"
+                android:valueTo="9.0"
+                android:stepSize="0.5"
+                app:thumbColor="@color/primary"
+                app:trackColorActive="@color/primary"
+                android:layout_marginBottom="16dp" />
+
+            <!-- 2. FILTER KEDALAMAN -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kedalaman"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_kedalaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/rb_depth_semua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semua kedalaman"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rb_depth_dangkal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dangkal (0 - 60 km)" />
+
+                <RadioButton
+                    android:id="@+id/rb_depth_menengah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menengah (60 - 300 km)" />
+
+                <RadioButton
+                    android:id="@+id/rb_depth_dalam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dalam (> 300 km)" />
+
+            </RadioGroup>
+
+            <!-- 3. FILTER SUMBER DATA -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sumber Data"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <CheckBox
+                android:id="@+id/cb_bmkg_terbaru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMKG Terbaru"
+                android:checked="true" />
+
+            <CheckBox
+                android:id="@+id/cb_bmkg_dirasakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMKG Dirasakan"
+                android:checked="true" />
+
+            <CheckBox
+                android:id="@+id/cb_usgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USGS Internasional"
+                android:checked="true"
+                android:layout_marginBottom="16dp" />
+
+            <!-- 4. FILTER WAKTU -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rentang Waktu"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_waktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
+
+                <RadioButton
+                    android:id="@+id/rb_time_24jam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24 jam terakhir"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rb_time_3hari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 hari terakhir" />
+
+                <RadioButton
+                    android:id="@+id/rb_time_7hari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7 hari terakhir" />
+
+                <RadioButton
+                    android:id="@+id/rb_time_semua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semua data" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Tombol Aksi (Fixed di bawah) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:elevation="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_reset_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Reset"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_apply_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Terapkan"
+            android:backgroundTint="@color/primary" />
+
+    </LinearLayout>
+
+</LinearLayout>

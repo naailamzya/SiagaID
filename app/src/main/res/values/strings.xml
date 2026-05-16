@@ -1,3 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SiagaID</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Beranda</string>
+    <string name="nav_maps">Peta</string>
+    <string name="nav_bookmark">Bookmark</string>
+
+    <!-- Tab Home -->
+    <string name="tab_terbaru">Terbaru</string>
+    <string name="tab_dirasakan">Dirasakan</string>
+    <string name="tab_internasional">Internasional</string>
+
+    <!-- Detail -->
+    <string name="detail_magnitude">Magnitudo</string>
+    <string name="detail_kedalaman">Kedalaman</string>
+    <string name="detail_wilayah">Wilayah</string>
+    <string name="detail_waktu">Waktu</string>
+    <string name="detail_potensi">Potensi</string>
+    <string name="detail_koordinat">Koordinat</string>
+    <string name="btn_bookmark">Simpan</string>
+    <string name="btn_navigasi">Navigasi</string>
+    <string name="btn_share">Bagikan</string>
+    <string name="btn_retry">Coba Lagi</string>
+
+    <!-- Status -->
+    <string name="loading">Memuat data...</string>
+    <string name="no_data">Tidak ada data</string>
+    <string name="no_internet">Tidak ada koneksi internet</string>
+    <string name="no_bookmark">Belum ada gempa yang disimpan</string>
+    <string name="error_load">Gagal memuat data</string>
+
+    <!-- Filter -->
+    <string name="filter_title">Filter Gempa</string>
+    <string name="filter_magnitude">Magnitudo</string>
+    <string name="filter_kedalaman">Kedalaman</string>
+    <string name="filter_sumber">Sumber Data</string>
+    <string name="filter_waktu">Rentang Waktu</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_terapkan">Terapkan</string>
+
+    <!-- Search -->
+    <string name="search_hint">Cari lokasi gempa...</string>
+
+    <!-- Maps -->
+    <string name="maps_title">Peta Gempa</string>
+    <string name="layer_normal">Normal</string>
+    <string name="layer_satellite">Satelit</string>
+    <string name="layer_terrain">Terrain</string>
 </resources>

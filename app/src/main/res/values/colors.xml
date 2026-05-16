@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Warna Magnitude -->
+    <color name="mag_danger">#E74C3C</color>     <!-- M ≥ 6.0 Merah -->
+    <color name="mag_warning">#E67E22</color>    <!-- M 5.0-5.9 Oranye -->
+    <color name="mag_attention">#F1C40F</color>  <!-- M 4.0-4.9 Kuning -->
+    <color name="mag_safe">#2ECC71</color>       <!-- M < 4.0 Hijau -->
+
+    <!-- Warna Utama Aplikasi -->
+    <color name="primary">#C0392B</color>
+    <color name="primary_dark">#922B21</color>
+    <color name="primary_light">#E74C3C</color>
+    <color name="accent">#E67E22</color>
+
+    <!-- Warna Netral -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_800">#424242</color>
+
+    <!-- Dark Theme -->
+    <color name="dark_background">#121212</color>
+    <color name="dark_surface">#1E1E1E</color>
+    <color name="dark_card">#2C2C2C</color>
 </resources>

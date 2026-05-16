@@ -1,9 +1,41 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.SiagaID" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SiagaID" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
     </style>
 
-    <style name="Theme.SiagaID" parent="Base.Theme.SiagaID" />
+    <!-- Toolbar Style -->
+    <style name="SiagaIDToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/primary</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="GempaCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="contentPadding">0dp</item>
+    </style>
+
+    <!-- Chip Style -->
+    <style name="FilterChip" parent="Widget.Material3.Chip.Filter">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Bottom Sheet Style -->
+    <style name="BottomSheetStyle" parent="Theme.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalBottomSheet</item>
+    </style>
+
+    <style name="ModalBottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="shapeAppearance">@style/BottomSheetShape</item>
+    </style>
+
+    <style name="BottomSheetShape" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+    </style>
 </resources>
