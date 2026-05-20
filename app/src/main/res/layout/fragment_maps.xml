@@ -31,8 +31,8 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_earthquake"
-                android:tint="@color/white" />
+                android:src="@drawable/earthquake"
+                app:tint="@color/white" />
 
             <TextView
                 android:id="@+id/tv_gempa_count"
@@ -50,9 +50,9 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/ic_layers"
-                android:tint="@color/white"
-                android:contentDescription="Layer" />
+                android:src="@drawable/layers"
+                android:contentDescription="Layer"
+                app:tint="@color/white" />
 
         </LinearLayout>
 
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="88dp"
-        app:srcCompat="@drawable/ic_my_location"
+        app:srcCompat="@drawable/my_location"
         app:backgroundTint="@color/white"
         app:tint="@color/primary" />
 

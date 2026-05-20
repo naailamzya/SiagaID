@@ -179,7 +179,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Navigasi"
-                app:icon="@drawable/ic_navigation"
+                app:icon="@drawable/navigation"
                 style="@style/Widget.Material3.Button.OutlinedButton" />
 
         </LinearLayout>

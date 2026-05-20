@@ -18,7 +18,7 @@
             android:background="@color/primary"
             app:title="Detail Gempa"
             app:titleTextColor="@color/white"
-            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIcon="@drawable/arrow_back"
             app:navigationIconTint="@color/white" />
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -174,7 +174,7 @@
                     android:layout_weight="1"
                     android:layout_marginEnd="8dp"
                     android:text="Simpan"
-                    app:icon="@drawable/ic_bookmark_border"
+                    app:icon="@drawable/bookmark_border"
                     style="@style/Widget.Material3.Button.OutlinedButton" />
 
                 <!-- Navigasi -->
@@ -186,7 +186,7 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginEnd="4dp"
                     android:text="Navigasi"
-                    app:icon="@drawable/ic_navigation"
+                    app:icon="@drawable/navigation"
                     android:backgroundTint="@color/primary" />
 
                 <!-- Share -->
@@ -197,7 +197,7 @@
                     android:layout_weight="1"
                     android:layout_marginStart="8dp"
                     android:text="Bagikan"
-                    app:icon="@drawable/ic_share"
+                    app:icon="@drawable/share"
                     style="@style/Widget.Material3.Button.OutlinedButton" />
 
             </LinearLayout>
